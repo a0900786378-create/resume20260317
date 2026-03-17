@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>我的履歷</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+        }
+
+        .container {
+            width: 60%;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .section {
+            margin-top: 20px;
+        }
+
+        .title {
+            font-weight: bold;
+            border-bottom: 2px solid #ddd;
+            margin-bottom: 10px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #message {
+            margin-top: 15px;
+            color: #007BFF;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>簡湘霓</h1>
+    <p>學號：AU114001001</p>
+
+    <div class="section">
+        <div class="title">基本資料</div>
+        <p>學校：亞洲大學</p>
+        <p>科系：聽力暨語言治療學系</p>
+    </div>
+
+    <div class="section">
+        <div class="title">技能</div>
+        <ul>
+            <li>溝通能力佳</li>
+            <li>基礎網頁設計</li>
+            <li>團隊合作</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="title">自我介紹</div>
+        <p>
+            我是一名對醫療與人際互動有興趣的學生，
+            目前就讀亞洲大學聽語系，希望未來能從事相關專業工作。
+        </p>
+    </div>
+
+    <button onclick="showMessage()">點我</button>
+    <p id="message"></p>簡
+</div>
+
+<script>
+    function showMessage() {
+        document.getElementById("message").innerText = "歡迎查看我的履歷！";
+    }
+</script>
+
+</body>
+</html>
